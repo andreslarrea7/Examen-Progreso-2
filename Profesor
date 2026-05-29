@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+public class Profesor extends Persona {
+    private String departamento;
+    private double salario;
+    private String estado;
+    ArrayList<Curso> cursos = new ArrayList<>();
+
+    public Profesor(String nombre, int edad, String departamento, double salario, String estado) {
+        super(nombre, edad);
+        this.departamento = departamento;
+        this.salario = salario;
+        this.estado = estado;
+    }
+    public void agregarCurso(Curso c) {
+        cursos.add(c);
+    }
+}
