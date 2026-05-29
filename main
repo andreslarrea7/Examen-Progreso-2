@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        Estudiante e1 = new Estudiante("Andres",20,1,9.5,"Activo");
+        Estudiante e2 = new Estudiante("Oswaldo",21,2,8.8,"Activo");
+        Estudiante e3 = new Estudiante("Emilio",22,3,7.9,"Nom Activo");
+        Profesor p1 = new Profesor("Kevin",45,"Sistemas", 2000,"Activo");
+
+        Curso c1 = new Curso(101,"POO",5);
+         c1.agregarEstudiante(e1);
+         c1.agregarEstudiante(e2);
+
+         p1.agregarCurso(c1);
+
+         System.out.println(e1);
+         System.out.println(e2);
+         System.out.println(e3);
+    }
+}
